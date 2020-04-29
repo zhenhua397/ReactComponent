@@ -1,10 +1,11 @@
 .living-card-container {
+  position: relative;
   width: 340px;
-  height: 530px;
   border-radius: 10px;
 }
 
 .living-card-image {
+  position: relative;
   width: 340px;
   height: 340px;
   border-top-left-radius: 10px;

@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import FloatTips from "../../components/floatTips";
+import AnnounceView from "./announce";
 import tipsIcon from "../../images/ic-tips-played.png";
 
 class LivingCard extends React.Component {
@@ -11,7 +12,8 @@ class LivingCard extends React.Component {
           "http://5b0988e595225.cdn.sohucs.com/images/20170724/ad28da0d658b43aba84ce91df9cacdad.jpeg",
         nick: "andy",
         desc: "hello"
-      }
+      }, 
+      liveRoomStatus = 0
     } = this.props;
     const tipsStyle = {
       height: "50px",
@@ -24,6 +26,20 @@ class LivingCard extends React.Component {
 
     const imageStyle = { backgroundImage: `url(${image})` };
     const iconStyle = { backgroundImage: `url(${user.icon})` };
+
+    if (liveRoomStatus === 0) {
+      imageStyle.borderRadius = "10px";
+      imageStyle.height="410px";
+
+      return (<div className="living-card-container">
+        <div className="living-card-image" style={imageStyle}>
+          <FloatTips icon={tipsIcon} text="哈哈哈你好啊" style={tipsStyle} />
+
+          <AnnounceView user={user} title="不知道是啥不知" />
+        </div>
+      </div>
+      );
+    }
 
     return (
       <div className="living-card-container">

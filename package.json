@@ -1,10 +1,10 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "description": "React example starter project",
+  "description": "React components",
   "keywords": [
     "react",
-    "starter"
+    "demo"
   ],
   "main": "src/index.js",
   "dependencies": {
@@ -12,9 +12,7 @@
     "react-dom": "16.12.0",
     "react-scripts": "3.0.1"
   },
-  "devDependencies": {
-    "typescript": "3.8.3"
-  },
+  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
