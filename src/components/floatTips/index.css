@@ -1,0 +1,28 @@
+.floatTips-container {
+  display: inline-block;
+  position: relative;
+  height: 35px;
+  border-radius: 17.5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.floatTips-icon {
+  display: inline-block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
+  vertical-align: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.floatTips-text {
+  display: inline-block;
+  position: relative;
+  margin-left: 7px;
+  margin-right: 14px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 35px;
+}
